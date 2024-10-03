@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 2rem;
-  background-color: var(--Rose50);
+  background-color: var(--Rose300);
 }
 h1 {
   color: var(--Rose900);
@@ -33,7 +33,8 @@ h1 {
   width: 70%;
   display: flex;
   justify-content: center;
-
+  border: 1px solid black;
+  flex-wrap: wrap;
   /* justify-content: space-around; */
   /* gap: 1rem; */
   /* align-items: flex-start; */
@@ -46,7 +47,7 @@ h1 {
   /* gap: 1rem; */
 }
 .cart-section {
-  width: 400px;
+  /* width: 400px; */
   max-width: 100%;
 }
 .desert-card {
@@ -118,7 +119,7 @@ h1 {
 }
 .cart-title {
   color: var(--Red);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 10px;
 }
 .cart-cards {
@@ -127,6 +128,9 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.cart-cards p {
+  color: var(--Rose400);
 }
 .empty {
   width: 100px;

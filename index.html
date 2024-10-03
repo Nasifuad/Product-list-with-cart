@@ -1,206 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href=" style.css" />
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-  <link rel="stylesheet" href=" style.css" />
-  <title>Frontend Mentor | Product list with cart</title>
-</head>
+  <body>
+    <div class="container">
+      <div class="desert-section">
+        <!-- // width 70% include the desert section only -->
+        <h1 class="desert-title">Deserts</h1>
+        <div class="desert-card">
+          <div class="desert-cards">
+            <div class="img-addCart">
+              <img
+                src="./assets/images/image-waffle-desktop.jpg"
+                alt="Waffle with Berries"
+                class="product-image"
+              />
+              <div class="button-card">
+                <img
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="add_to_cart"
+                  id="Waffle"
+                  class="cart-icon"
+                />
+                <p class="add">Add to Cart</p>
+              </div>
+            </div>
+            <div class="product-information">
+              <p class="product-title">Waffle</p>
+              <p class="product-description">Waffle with Berries</p>
+              <p class="product-price">$6.50</p>
+            </div>
+          </div>
 
-<body>
-  <div class="container">
-    <div class="desert-section">
-      <!-- // width 70% include the desert section only -->
-      <h1 class="desert-title">Deserts</h1>
-      <div class="desert-card">
-        <div class="desert-cards">
-          <div class="img-addCart">
-            <img src="./assets/images/image-waffle-desktop.jpg" alt="Waffle with Berries" class="product-image" />
-            <div class="button-card">
-              <img src="./assets/images/icon-add-to-cart.svg" alt="add_to_cart" id="Waffle" class="cart-icon" />
-              <p class="add">Add to Cart</p>
+          <div class="desert-cards">
+            <div class="img-addCart">
+              <img
+                src="./assets/images/image-creme-brulee-desktop.jpg"
+                alt="Crème Brûlée"
+                class="product-image"
+              />
+              <div class="button-card">
+                <img
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="add_to_cart"
+                  id="Brulee"
+                  class="cart-icon"
+                />
+                <p class="add">Add to Cart</p>
+              </div>
+            </div>
+            <div class="product-information">
+              <p class="product-title">Crème Brûlée</p>
+              <p class="product-description">Brûlée Crème Brûlée</p>
+              <p class="product-price">$7.00</p>
             </div>
           </div>
-          <div class="product-information">
-            <p class="product-title">Waffle</p>
-            <p class="product-description">Waffle with Berries</p>
-            <p class="product-price">$6.50</p>
+
+          <div class="desert-cards">
+            <div class="img-addCart">
+              <img
+                src="./assets/images/image-macaron-desktop.jpg"
+                alt="Macaron Mix"
+                class="product-image"
+              />
+              <div class="button-card">
+                <img
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="add_to_cart"
+                  id="Macaron"
+                  class="cart-icon"
+                />
+                <p class="add">Add to Cart</p>
+              </div>
+            </div>
+            <div class="product-information">
+              <p class="product-title">Macaron Mix</p>
+              <p class="product-description">Mix of Five Macarons</p>
+              <p class="product-price">$8.00</p>
+            </div>
+          </div>
+
+          <div class="desert-cards">
+            <div class="img-addCart">
+              <img
+                src="./assets/images/image-tiramisu-desktop.jpg"
+                alt="Tiramisu"
+                class="product-image"
+              />
+              <div class="button-card">
+                <img
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="add_to_cart"
+                  id="Tiramisu"
+                  class="cart-icon"
+                />
+                <p class="add">Add to Cart</p>
+              </div>
+            </div>
+            <div class="product-information">
+              <p class="product-title">Tiramisu</p>
+              <p class="product-description">Classic Tiramisu</p>
+              <p class="product-price">$5.50</p>
+            </div>
+          </div>
+
+          <div class="desert-cards">
+            <div class="img-addCart">
+              <img
+                src="./assets/images/image-baklava-desktop.jpg"
+                alt="Pistachio Baklava"
+                class="product-image"
+              />
+              <div class="button-card">
+                <img
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="add_to_cart"
+                  id="Baklava"
+                  class="cart-icon"
+                />
+                <p class="add">Add to Cart</p>
+              </div>
+            </div>
+            <div class="product-information">
+              <p class="product-title">Pistachio Baklava</p>
+              <p class="product-description">Baklava with Pistachios</p>
+              <p class="product-price">$4.00</p>
+            </div>
+          </div>
+
+          <div class="desert-cards">
+            <div class="img-addCart">
+              <img
+                src="./assets/images/image-meringue-desktop.jpg"
+                alt="Lemon Meringue Pie"
+                class="product-image"
+              />
+              <div class="button-card">
+                <img
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="add_to_cart"
+                  id="Pie"
+                  class="cart-icon"
+                />
+                <p class="add">Add to Cart</p>
+              </div>
+            </div>
+            <div class="product-information">
+              <p class="product-title">Lemon Meringue Pie</p>
+              <p class="product-description">Tangy Lemon Meringue Pie</p>
+              <p class="product-price">$5.00</p>
+            </div>
+          </div>
+
+          <div class="desert-cards">
+            <div class="img-addCart">
+              <img
+                src="./assets/images/image-cake-desktop.jpg"
+                alt="Red Velvet Cake"
+                class="product-image"
+              />
+              <div class="button-card">
+                <img
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="add_to_cart"
+                  id="RedVelvet"
+                  class="cart-icon"
+                />
+                <p class="add">Add to Cart</p>
+              </div>
+            </div>
+            <div class="product-information">
+              <p class="product-title">Red Velvet Cake</p>
+              <p class="product-description">Classic Red Velvet Cake</p>
+              <p class="product-price">$4.50</p>
+            </div>
+          </div>
+
+          <div class="desert-cards">
+            <div class="img-addCart">
+              <img
+                src="./assets/images/image-brownie-desktop.jpg"
+                alt="Salted Caramel Brownie"
+                class="product-image"
+              />
+              <div class="button-card">
+                <img
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="add_to_cart"
+                  id="Brownie"
+                  class="cart-icon"
+                />
+                <p class="add">Add to Cart</p>
+              </div>
+            </div>
+            <div class="product-information">
+              <p class="product-title">Salted Caramel Brownie</p>
+              <p class="product-description">Gooey Salted Caramel Brownie</p>
+              <p class="product-price">$4.50</p>
+            </div>
+          </div>
+
+          <div class="desert-cards">
+            <div class="img-addCart">
+              <img
+                src="./assets/images/image-panna-cotta-desktop.jpg"
+                alt="Vanilla Panna Cotta"
+                class="product-image"
+              />
+              <div class="button-card">
+                <img
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="add_to_cart"
+                  id="PannaCotta"
+                  class="cart-icon"
+                />
+                <p class="add">Add to Cart</p>
+              </div>
+            </div>
+            <div class="product-information">
+              <p class="product-title">Vanilla Panna Cotta</p>
+              <p class="product-description">Smooth Vanilla Panna Cotta</p>
+              <p class="product-price">$6.50</p>
+            </div>
           </div>
         </div>
       </div>
-      
-      <div class="desert-card">
-        <div class="desert-cards">
-          <div class="img-addCart">
-            <img src="./assets/images/image-brulee-desktop.jpg" alt="Crème Brûlée" class="product-image" />
-            <div class="button-card">
-              <img src="./assets/images/icon-add-to-cart.svg" alt="add_to_cart" id="Brulee" class="cart-icon" />
-              <p class="add">Add to Cart</p>
-            </div>
-          </div>
-          <div class="product-information">
-            <p class="product-title">Crème Brûlée</p>
-            <p class="product-description">Brûlée Crème Brûlée</p>
-            <p class="product-price">$7.00</p>
-          </div>
+      <div class="cart-section">
+        <h1 class="cart-title">Your Cart <span id="quantity">0</span></h1>
+        <div class="cart-cards">
+          <img
+            src="./assets/images/illustration-empty-cart.svg"
+            alt="empty"
+            class="empty"
+          />
+          <p>Your added items will appear here</p>
         </div>
-      </div>
-      
-      <div class="desert-card">
-        <div class="desert-cards">
-          <div class="img-addCart">
-            <img src="./assets/images/image-macaron-desktop.jpg" alt="Macaron Mix" class="product-image" />
-            <div class="button-card">
-              <img src="./assets/images/icon-add-to-cart.svg" alt="add_to_cart" id="Macaron" class="cart-icon" />
-              <p class="add">Add to Cart</p>
-            </div>
-          </div>
-          <div class="product-information">
-            <p class="product-title">Macaron Mix</p>
-            <p class="product-description">Mix of Five Macarons</p>
-            <p class="product-price">$8.00</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="desert-card">
-        <div class="desert-cards">
-          <div class="img-addCart">
-            <img src="./assets/images/image-tiramisu-desktop.jpg" alt="Tiramisu" class="product-image" />
-            <div class="button-card">
-              <img src="./assets/images/icon-add-to-cart.svg" alt="add_to_cart" id="Tiramisu" class="cart-icon" />
-              <p class="add">Add to Cart</p>
-            </div>
-          </div>
-          <div class="product-information">
-            <p class="product-title">Tiramisu</p>
-            <p class="product-description">Classic Tiramisu</p>
-            <p class="product-price">$5.50</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="desert-card">
-        <div class="desert-cards">
-          <div class="img-addCart">
-            <img src="./assets/images/image-baklava-desktop.jpg" alt="Pistachio Baklava" class="product-image" />
-            <div class="button-card">
-              <img src="./assets/images/icon-add-to-cart.svg" alt="add_to_cart" id="Baklava" class="cart-icon" />
-              <p class="add">Add to Cart</p>
-            </div>
-          </div>
-          <div class="product-information">
-            <p class="product-title">Pistachio Baklava</p>
-            <p class="product-description">Baklava with Pistachios</p>
-            <p class="product-price">$4.00</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="desert-card">
-        <div class="desert-cards">
-          <div class="img-addCart">
-            <img src="./assets/images/image-pie-desktop.jpg" alt="Lemon Meringue Pie" class="product-image" />
-            <div class="button-card">
-              <img src="./assets/images/icon-add-to-cart.svg" alt="add_to_cart" id="Pie" class="cart-icon" />
-              <p class="add">Add to Cart</p>
-            </div>
-          </div>
-          <div class="product-information">
-            <p class="product-title">Lemon Meringue Pie</p>
-            <p class="product-description">Tangy Lemon Meringue Pie</p>
-            <p class="product-price">$5.00</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="desert-card">
-        <div class="desert-cards">
-          <div class="img-addCart">
-            <img src="./assets/images/image-red-velvet-desktop.jpg" alt="Red Velvet Cake" class="product-image" />
-            <div class="button-card">
-              <img src="./assets/images/icon-add-to-cart.svg" alt="add_to_cart" id="RedVelvet" class="cart-icon" />
-              <p class="add">Add to Cart</p>
-            </div>
-          </div>
-          <div class="product-information">
-            <p class="product-title">Red Velvet Cake</p>
-            <p class="product-description">Classic Red Velvet Cake</p>
-            <p class="product-price">$4.50</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="desert-card">
-        <div class="desert-cards">
-          <div class="img-addCart">
-            <img src="./assets/images/image-brownie-desktop.jpg" alt="Salted Caramel Brownie" class="product-image" />
-            <div class="button-card">
-              <img src="./assets/images/icon-add-to-cart.svg" alt="add_to_cart" id="Brownie" class="cart-icon" />
-              <p class="add">Add to Cart</p>
-            </div>
-          </div>
-          <div class="product-information">
-            <p class="product-title">Salted Caramel Brownie</p>
-            <p class="product-description">Gooey Salted Caramel Brownie</p>
-            <p class="product-price">$4.50</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="desert-card">
-        <div class="desert-cards">
-          <div class="img-addCart">
-            <img src="./assets/images/image-pannacotta-desktop.jpg" alt="Vanilla Panna Cotta" class="product-image" />
-            <div class="button-card">
-              <img src="./assets/images/icon-add-to-cart.svg" alt="add_to_cart" id="PannaCotta" class="cart-icon" />
-              <p class="add">Add to Cart</p>
-            </div>
-          </div>
-          <div class="product-information">
-            <p class="product-title">Vanilla Panna Cotta</p>
-            <p class="product-description">Smooth Vanilla Panna Cotta</p>
-            <p class="product-price">$6.50</p>
-          </div>
-        </div>
-      </div>
-      
       </div>
     </div>
-  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="cart-section">
-    <h1 class="cart-title">Your Cart <span id="quantity">0</span></h1>
-    <div class="cart-cards">
-      <img src="./assets/images/illustration-empty-cart.svg" alt="empty" class="empty" />
-      <p>Your added items will appear here</p>
-    </div>
-  </div>
-  </div>
-
-
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
