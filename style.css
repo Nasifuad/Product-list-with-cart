@@ -22,7 +22,8 @@ body {
   display: flex;
   justify-content: center;
   padding: 2rem;
-  background-color: var(--Rose300);
+  background-color: var(--Rose100);
+  /* background-color: var(--Rose300); */
 }
 h1 {
   color: var(--Rose900);
@@ -33,7 +34,7 @@ h1 {
   width: 70%;
   display: flex;
   justify-content: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   flex-wrap: wrap;
   /* justify-content: space-around; */
   /* gap: 1rem; */
@@ -90,6 +91,45 @@ h1 {
   bottom: -10%;
   font-weight: 500;
 }
+.button-card:hover {
+  cursor: pointer;
+  /* background-color: var(--Rose900); */
+}
+.button-card-count {
+  display: flex;
+  background-color: var(--Rose100);
+  width: 60%;
+  padding: 10px;
+  border-radius: 1000px;
+  background-color: var(--Red);
+  /* border: 1px solid var(--Rose400); */
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: -10%;
+  font-weight: 500;
+}
+.button-card-count p {
+  color: var(--Rose50);
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.icon {
+  width: 20px; /* Ensure both icons have the same width */
+  height: 20px; /* Ensure both icons have the same height */
+  border-radius: 50%; /* Apply round edges */
+  /* background-color: transparent; */
+  padding: 5px;
+  background: transparent;
+  border: 1px solid var(--Rose100);
+}
+.icon:hover {
+  cursor: pointer;
+
+  /* z-index: -999; */
+  /* background-color: var(--Rose500); */
+}
 .button-card p {
   font-size: 0.6rem;
   color: var(--Rose200);
@@ -97,6 +137,9 @@ h1 {
 }
 .cart-icon {
   width: 15px;
+}
+.cart:hover {
+  cursor: pointer;
 }
 .product-information {
   display: flex;
@@ -134,4 +177,19 @@ h1 {
 }
 .empty {
   width: 100px;
+}
+.cart-items {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.cart-items p {
+  font-size: 0.8rem;
+  display: flex;
+  gap: 8px;
 }

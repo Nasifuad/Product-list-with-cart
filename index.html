@@ -3,23 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href=" style.css" />
-    <title>Frontend Mentor | Product list with cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Product List with Cart</title>
   </head>
-
   <body>
     <div class="container">
       <div class="desert-section">
-        <!-- // width 70% include the desert section only -->
-        <h1 class="desert-title">Deserts</h1>
+        <h1 class="desert-title">Desserts</h1>
+
+        <!-- Waffle Card -->
         <div class="desert-card">
           <div class="desert-cards">
             <div class="img-addCart">
@@ -28,14 +26,32 @@
                 alt="Waffle with Berries"
                 class="product-image"
               />
-              <div class="button-card">
+              <div class="button-card" id="buttonCardWaffle">
                 <img
                   src="./assets/images/icon-add-to-cart.svg"
                   alt="add_to_cart"
-                  id="Waffle"
                   class="cart-icon"
                 />
                 <p class="add">Add to Cart</p>
+              </div>
+              <div
+                class="button-card-count"
+                id="countCardWaffle"
+                style="display: none"
+              >
+                <img
+                  src="./assets/images/icon-increment-quantity.svg"
+                  alt="plus"
+                  id="increment_Waffle"
+                  class="icon"
+                />
+                <p id="item_count_Waffle">0</p>
+                <img
+                  src="./assets/images/icon-decrement-quantity.svg"
+                  alt="minus"
+                  id="decrement_Waffle"
+                  class="icon"
+                />
               </div>
             </div>
             <div class="product-information">
@@ -45,6 +61,7 @@
             </div>
           </div>
 
+          <!-- Crème Brûlée Card -->
           <div class="desert-cards">
             <div class="img-addCart">
               <img
@@ -52,14 +69,32 @@
                 alt="Crème Brûlée"
                 class="product-image"
               />
-              <div class="button-card">
+              <div class="button-card" id="buttonCardBrulee">
                 <img
                   src="./assets/images/icon-add-to-cart.svg"
                   alt="add_to_cart"
-                  id="Brulee"
                   class="cart-icon"
                 />
                 <p class="add">Add to Cart</p>
+              </div>
+              <div
+                class="button-card-count"
+                id="countCardBrulee"
+                style="display: none"
+              >
+                <img
+                  src="./assets/images/icon-increment-quantity.svg"
+                  alt="plus"
+                  id="increment_Brulee"
+                  class="icon"
+                />
+                <p id="item_count_Brulee">0</p>
+                <img
+                  src="./assets/images/icon-decrement-quantity.svg"
+                  alt="minus"
+                  id="decrement_Brulee"
+                  class="icon"
+                />
               </div>
             </div>
             <div class="product-information">
@@ -69,6 +104,7 @@
             </div>
           </div>
 
+          <!-- Macaron Card -->
           <div class="desert-cards">
             <div class="img-addCart">
               <img
@@ -76,23 +112,42 @@
                 alt="Macaron Mix"
                 class="product-image"
               />
-              <div class="button-card">
+              <div class="button-card" id="buttonCardMacaron">
                 <img
                   src="./assets/images/icon-add-to-cart.svg"
                   alt="add_to_cart"
-                  id="Macaron"
                   class="cart-icon"
                 />
                 <p class="add">Add to Cart</p>
               </div>
+              <div
+                class="button-card-count"
+                id="countCardMacaron"
+                style="display: none"
+              >
+                <img
+                  src="./assets/images/icon-increment-quantity.svg"
+                  alt="plus"
+                  id="increment_Macaron"
+                  class="icon"
+                />
+                <p id="item_count_Macaron">0</p>
+                <img
+                  src="./assets/images/icon-decrement-quantity.svg"
+                  alt="minus"
+                  id="decrement_Macaron"
+                  class="icon"
+                />
+              </div>
             </div>
             <div class="product-information">
-              <p class="product-title">Macaron Mix</p>
-              <p class="product-description">Mix of Five Macarons</p>
+              <p class="product-title">Macaron</p>
+              <p class="product-description">Macarons Mix of Five</p>
               <p class="product-price">$8.00</p>
             </div>
           </div>
 
+          <!-- Tiramisu Card -->
           <div class="desert-cards">
             <div class="img-addCart">
               <img
@@ -100,14 +155,32 @@
                 alt="Tiramisu"
                 class="product-image"
               />
-              <div class="button-card">
+              <div class="button-card" id="buttonCardTiramisu">
                 <img
                   src="./assets/images/icon-add-to-cart.svg"
                   alt="add_to_cart"
-                  id="Tiramisu"
                   class="cart-icon"
                 />
                 <p class="add">Add to Cart</p>
+              </div>
+              <div
+                class="button-card-count"
+                id="countCardTiramisu"
+                style="display: none"
+              >
+                <img
+                  src="./assets/images/icon-increment-quantity.svg"
+                  alt="plus"
+                  id="increment_Tiramisu"
+                  class="icon"
+                />
+                <p id="item_count_Tiramisu">0</p>
+                <img
+                  src="./assets/images/icon-decrement-quantity.svg"
+                  alt="minus"
+                  id="decrement_Tiramisu"
+                  class="icon"
+                />
               </div>
             </div>
             <div class="product-information">
@@ -117,6 +190,7 @@
             </div>
           </div>
 
+          <!-- Baklava Card -->
           <div class="desert-cards">
             <div class="img-addCart">
               <img
@@ -124,23 +198,42 @@
                 alt="Pistachio Baklava"
                 class="product-image"
               />
-              <div class="button-card">
+              <div class="button-card" id="buttonCardBaklava">
                 <img
                   src="./assets/images/icon-add-to-cart.svg"
                   alt="add_to_cart"
-                  id="Baklava"
                   class="cart-icon"
                 />
                 <p class="add">Add to Cart</p>
               </div>
+              <div
+                class="button-card-count"
+                id="countCardBaklava"
+                style="display: none"
+              >
+                <img
+                  src="./assets/images/icon-increment-quantity.svg"
+                  alt="plus"
+                  id="increment_Baklava"
+                  class="icon"
+                />
+                <p id="item_count_Baklava">0</p>
+                <img
+                  src="./assets/images/icon-decrement-quantity.svg"
+                  alt="minus"
+                  id="decrement_Baklava"
+                  class="icon"
+                />
+              </div>
             </div>
             <div class="product-information">
-              <p class="product-title">Pistachio Baklava</p>
+              <p class="product-title">Baklava</p>
               <p class="product-description">Baklava with Pistachios</p>
               <p class="product-price">$4.00</p>
             </div>
           </div>
 
+          <!-- Lemon Meringue Pie Card -->
           <div class="desert-cards">
             <div class="img-addCart">
               <img
@@ -148,23 +241,42 @@
                 alt="Lemon Meringue Pie"
                 class="product-image"
               />
-              <div class="button-card">
+              <div class="button-card" id="buttonCardPie">
                 <img
                   src="./assets/images/icon-add-to-cart.svg"
                   alt="add_to_cart"
-                  id="Pie"
                   class="cart-icon"
                 />
                 <p class="add">Add to Cart</p>
               </div>
+              <div
+                class="button-card-count"
+                id="countCardPie"
+                style="display: none"
+              >
+                <img
+                  src="./assets/images/icon-increment-quantity.svg"
+                  alt="plus"
+                  id="increment_Pie"
+                  class="icon"
+                />
+                <p id="item_count_Pie">0</p>
+                <img
+                  src="./assets/images/icon-decrement-quantity.svg"
+                  alt="minus"
+                  id="decrement_Pie"
+                  class="icon"
+                />
+              </div>
             </div>
             <div class="product-information">
-              <p class="product-title">Lemon Meringue Pie</p>
-              <p class="product-description">Tangy Lemon Meringue Pie</p>
+              <p class="product-title">Pie</p>
+              <p class="product-description">Lemon Meringue Pie</p>
               <p class="product-price">$5.00</p>
             </div>
           </div>
 
+          <!-- Red Velvet Cake Card -->
           <div class="desert-cards">
             <div class="img-addCart">
               <img
@@ -172,23 +284,42 @@
                 alt="Red Velvet Cake"
                 class="product-image"
               />
-              <div class="button-card">
+              <div class="button-card" id="buttonCardRedVelvet">
                 <img
                   src="./assets/images/icon-add-to-cart.svg"
                   alt="add_to_cart"
-                  id="RedVelvet"
                   class="cart-icon"
                 />
                 <p class="add">Add to Cart</p>
               </div>
+              <div
+                class="button-card-count"
+                id="countCardRedVelvet"
+                style="display: none"
+              >
+                <img
+                  src="./assets/images/icon-increment-quantity.svg"
+                  alt="plus"
+                  id="increment_RedVelvet"
+                  class="icon"
+                />
+                <p id="item_count_RedVelvet">0</p>
+                <img
+                  src="./assets/images/icon-decrement-quantity.svg"
+                  alt="minus"
+                  id="decrement_RedVelvet"
+                  class="icon"
+                />
+              </div>
             </div>
             <div class="product-information">
-              <p class="product-title">Red Velvet Cake</p>
-              <p class="product-description">Classic Red Velvet Cake</p>
-              <p class="product-price">$4.50</p>
+              <p class="product-title">Cake</p>
+              <p class="product-description">Red Velvet Cake</p>
+              <p class="product-price">$6.00</p>
             </div>
           </div>
 
+          <!-- Salted Caramel Brownie Card -->
           <div class="desert-cards">
             <div class="img-addCart">
               <img
@@ -196,23 +327,41 @@
                 alt="Salted Caramel Brownie"
                 class="product-image"
               />
-              <div class="button-card">
+              <div class="button-card" id="buttonCardBrownie">
                 <img
                   src="./assets/images/icon-add-to-cart.svg"
                   alt="add_to_cart"
-                  id="Brownie"
                   class="cart-icon"
                 />
                 <p class="add">Add to Cart</p>
               </div>
+              <div
+                class="button-card-count"
+                id="countCardBrownie"
+                style="display: none"
+              >
+                <img
+                  src="./assets/images/icon-increment-quantity.svg"
+                  alt="plus"
+                  id="increment_Brownie"
+                  class="icon"
+                />
+                <p id="item_count_Brownie">0</p>
+                <img
+                  src="./assets/images/icon-decrement-quantity.svg"
+                  alt="minus"
+                  id="decrement_Brownie"
+                  class="icon"
+                />
+              </div>
             </div>
             <div class="product-information">
-              <p class="product-title">Salted Caramel Brownie</p>
-              <p class="product-description">Gooey Salted Caramel Brownie</p>
+              <p class="product-title">Caramel Brownie</p>
+              <p class="product-description">Salted Caramel Brownie</p>
               <p class="product-price">$4.50</p>
             </div>
           </div>
-
+          <!-- Vanilla Panna Cotta Card -->
           <div class="desert-cards">
             <div class="img-addCart">
               <img
@@ -220,26 +369,46 @@
                 alt="Vanilla Panna Cotta"
                 class="product-image"
               />
-              <div class="button-card">
+              <div class="button-card" id="buttonCardPannaCotta">
                 <img
                   src="./assets/images/icon-add-to-cart.svg"
                   alt="add_to_cart"
-                  id="PannaCotta"
                   class="cart-icon"
                 />
                 <p class="add">Add to Cart</p>
               </div>
+              <div
+                class="button-card-count"
+                id="countCardPannaCotta"
+                style="display: none"
+              >
+                <img
+                  src="./assets/images/icon-increment-quantity.svg"
+                  alt="plus"
+                  id="increment_PannaCotta"
+                  class="icon"
+                />
+                <p id="item_count_PannaCotta">0</p>
+                <img
+                  src="./assets/images/icon-decrement-quantity.svg"
+                  alt="minus"
+                  id="decrement_PannaCotta"
+                  class="icon"
+                />
+              </div>
             </div>
             <div class="product-information">
-              <p class="product-title">Vanilla Panna Cotta</p>
-              <p class="product-description">Smooth Vanilla Panna Cotta</p>
-              <p class="product-price">$6.50</p>
+              <p class="product-title">Panna Cotta</p>
+              <p class="product-description">Creamy Vanilla Panna Cotta</p>
+              <p class="product-price">$5.50</p>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Cart Section -->
       <div class="cart-section">
-        <h1 class="cart-title">Your Cart <span id="quantity">0</span></h1>
+        <h1 class="cart-title">Your Cart <span id="cart_quantity">0</span></h1>
         <div class="cart-cards">
           <img
             src="./assets/images/illustration-empty-cart.svg"
