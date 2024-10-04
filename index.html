@@ -55,9 +55,10 @@
               </div>
             </div>
             <div class="product-information">
-              <p class="product-title">Waffle</p>
-              <p class="product-description">Waffle with Berries</p>
-              <p class="product-price">$6.50</p>
+              <p class="product-title" >Waffle</p>
+              <p class="product-description"
+              id="nameWaffle">Waffle with Berries</p>
+              <p class="product-price" id="priceWaffle">$6.50</p>
             </div>
           </div>
 
@@ -99,8 +100,8 @@
             </div>
             <div class="product-information">
               <p class="product-title">Crème Brûlée</p>
-              <p class="product-description">Brûlée Crème Brûlée</p>
-              <p class="product-price">$7.00</p>
+              <p class="product-description" id="nameBrulee">Brûlée Crème Brûlée</p>
+              <p class="product-price" id="priceBrulee">$7.00</p>
             </div>
           </div>
 
@@ -142,8 +143,8 @@
             </div>
             <div class="product-information">
               <p class="product-title">Macaron</p>
-              <p class="product-description">Macarons Mix of Five</p>
-              <p class="product-price">$8.00</p>
+              <p class="product-description" id="nameMacaron">Macarons Mix of Five</p>
+              <p class="product-price" id="priceMacaron">$8.00</p>
             </div>
           </div>
 
@@ -185,8 +186,8 @@
             </div>
             <div class="product-information">
               <p class="product-title">Tiramisu</p>
-              <p class="product-description">Classic Tiramisu</p>
-              <p class="product-price">$5.50</p>
+              <p class="product-description" id="nameTiramisu">Classic Tiramisu</p>
+              <p class="product-price" id="priceTiramisu">$5.50</p>
             </div>
           </div>
 
@@ -228,8 +229,8 @@
             </div>
             <div class="product-information">
               <p class="product-title">Baklava</p>
-              <p class="product-description">Baklava with Pistachios</p>
-              <p class="product-price">$4.00</p>
+              <p class="product-description" id="nameBaklava">Baklava with Pistachios</p>
+              <p class="product-price" id="priceBaklava">$4.00</p>
             </div>
           </div>
 
@@ -271,8 +272,8 @@
             </div>
             <div class="product-information">
               <p class="product-title">Pie</p>
-              <p class="product-description">Lemon Meringue Pie</p>
-              <p class="product-price">$5.00</p>
+              <p class="product-description" id="namePie">Lemon Meringue Pie</p>
+              <p class="product-price" id="pricePie">$5.00</p>
             </div>
           </div>
 
@@ -314,8 +315,8 @@
             </div>
             <div class="product-information">
               <p class="product-title">Cake</p>
-              <p class="product-description">Red Velvet Cake</p>
-              <p class="product-price">$6.00</p>
+              <p class="product-description" id="nameRedVelvet">Red Velvet Cake</p>
+              <p class="product-price" id="priceRedVelvet">$6.00</p>
             </div>
           </div>
 
@@ -357,8 +358,8 @@
             </div>
             <div class="product-information">
               <p class="product-title">Caramel Brownie</p>
-              <p class="product-description">Salted Caramel Brownie</p>
-              <p class="product-price">$4.50</p>
+              <p class="product-description" id="nameBrownie">Salted Caramel Brownie</p>
+              <p class="product-price" id="priceBrownie">$4.50</p>
             </div>
           </div>
           <!-- Vanilla Panna Cotta Card -->
@@ -399,8 +400,8 @@
             </div>
             <div class="product-information">
               <p class="product-title">Panna Cotta</p>
-              <p class="product-description">Creamy Vanilla Panna Cotta</p>
-              <p class="product-price">$5.50</p>
+              <p class="product-description" id="namePannaCotta">Creamy Vanilla Panna Cotta</p>
+              <p class="product-price" id="pricePannaCotta">$5.50</p>
             </div>
           </div>
         </div>
@@ -408,10 +409,8 @@
 
       <!-- Cart Section -->
       <div class="cart-section">
-        <h1 class="cart-title">
-          Your Cart (<span id="cart_quantity">0</span>)
-        </h1>
-        <div class="cart-cards" id="empty_cart" style="display: none">
+        <h1 class="cart-title">Your Cart (<span id="quantity">0</span>)</h1>
+        <div class="cart-cards" id="empty_cart" ">
           <img
             src="./assets/images/illustration-empty-cart.svg"
             alt="empty"
@@ -419,14 +418,14 @@
           />
           <p>Your added items will appear here</p>
         </div>
-        <div class="cart_items" id="cart-items">
+        <div class="cart_items" id="cart_items" style="display: none;">
           <div class="cart_item">
             <div class="item_info">
               <div class="item_name">Classic Tiramisu</div>
               <div class="item_quantity_price">
                 <p class="item_quantity">1x</p>
-                <p class="item_price">@$5.50</p>
-                <p class="single_total">$5.50</p>
+                <p class="item_price">@$ <span id="item_price">5.50</span> </p>
+                <p class="single_total">$ <span id="item_total">5.50"></span></p>
               </div>
             </div>
             <img
