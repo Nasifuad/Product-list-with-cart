@@ -408,14 +408,33 @@
 
       <!-- Cart Section -->
       <div class="cart-section">
-        <h1 class="cart-title">Your Cart <span id="cart_quantity">0</span></h1>
-        <div class="cart-cards">
+        <h1 class="cart-title">
+          Your Cart (<span id="cart_quantity">0</span>)
+        </h1>
+        <div class="cart-cards" id="empty_cart" style="display: none">
           <img
             src="./assets/images/illustration-empty-cart.svg"
             alt="empty"
             class="empty"
           />
           <p>Your added items will appear here</p>
+        </div>
+        <div class="cart_items" id="cart-items">
+          <div class="cart_item">
+            <div class="item_info">
+              <div class="item_name">Classic Tiramisu</div>
+              <div class="item_quantity_price">
+                <p class="item_quantity">1x</p>
+                <p class="item_price">@$5.50</p>
+                <p class="single_total">$5.50</p>
+              </div>
+            </div>
+            <img
+              src="./assets/images/icon-remove-item.svg"
+              alt="delete"
+              class="item_delete"
+            />
+          </div>
         </div>
       </div>
     </div>
