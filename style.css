@@ -179,7 +179,7 @@ h1 {
   width: 100px;
 }
 .cart-items {
-  width: 150px;
+  /* width: 150px; */
   display: flex;
   justify-content: space-between;
 }
@@ -251,4 +251,38 @@ h1 {
   background-color: var(--Rose900);
   /* background: rgb(217, 255, 0); */
   /* background-color: var(--Rose400); */
+}
+.order {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 1rem;
+}
+.order-total {
+  display: flex;
+  justify-content: space-between;
+}
+.order-total p {
+  color: var(--Rose500);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.total {
+  color: var(--Rose900);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.carbon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  color: var(--Rose500);
+}
+.bold {
+  color: var(--Rose900);
+  font-weight: 700;
 }

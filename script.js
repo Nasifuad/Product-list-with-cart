@@ -100,10 +100,11 @@ function addCart(id, name, quantity, price) {
             <div class="item_info">
               <div class="item_name">${name}</div>
               <div class="item_quantity_price">
-                <p class="item_quantity" id=
-                "item_quantity${id}">${quantity_arrary[id][0].quantity}x</p>
+                <p class="item_quantity"">
+                 <span id="item_quantity${id}">${quantity}</span>
+                 x</p>
                 <p class="item_price">@$ <span id="item_price${id}"> ${price}</span> </p>
-                <p class="single_total" id="item_total${id}">$ <span id="item_total">${
+                <p class="single_total">$ <span  id="item_total${id}">${
       quantity * parseFloat(price)
     }"></span></p>
               </div>
@@ -117,8 +118,10 @@ function addCart(id, name, quantity, price) {
     cart_items.appendChild(newitem);
   } else {
     const item_quantity = document.getElementById(`item_quantity${id}`);
-    item_quantity.innerHTML = quantity_arrary[id][0].quantity + "x";
-    const item_total = document.getElementById(`item_total`);
-    item_total.innerHTML = quantity_arrary[id][0].quantity * parseFloat(price);
+    const item_price = document.getElementById(`item_price${id}`);
+    const item_total = document.getElementById(`item_total${id}`);
+    item_quantity.innerHTML = quantity;
+    item_price.innerHTML = price;
+    item_total.innerHTML = quantity * parseFloat(price);
   }
 }

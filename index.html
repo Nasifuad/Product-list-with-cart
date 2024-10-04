@@ -410,7 +410,7 @@
       <!-- Cart Section -->
       <div class="cart-section">
         <h1 class="cart-title">Your Cart (<span id="quantity">0</span>)</h1>
-        <div class="cart-cards" id="empty_cart" ">
+        <div class="cart-cards" id="empty_cart" style="display: none;">
           <img
             src="./assets/images/illustration-empty-cart.svg"
             alt="empty"
@@ -418,12 +418,12 @@
           />
           <p>Your added items will appear here</p>
         </div>
-        <div class="cart_items" id="cart_items" style="display: none;">
+        <div class="cart_items" id="cart_items" ">
           <div class="cart_item">
             <div class="item_info">
               <div class="item_name">Classic Tiramisu</div>
               <div class="item_quantity_price">
-                <p class="item_quantity">1x</p>
+                <p class="item_quantity"><span id="item_quantity">1</span>x</p>
                 <p class="item_price">@$ <span id="item_price">5.50</span> </p>
                 <p class="single_total">$ <span id="item_total">5.50"></span></p>
               </div>
@@ -434,6 +434,18 @@
               class="item_delete"
             />
           </div>
+          
+        </div>
+        <div class="order">
+          <div class="order-total">
+            <p>Order Total</p>
+            <div class="total">$ <span id="total_price">0</span></div>
+          </div>
+          <div class="carbon">
+            <img src="./assets/images/icon-carbon-neutral.svg" alt="carbon">
+            <p>This is a <span class="bold">carbon-neutral</span> delivary</p>
+          </div>
+          <button id="confirm">Confirm Order</button>
         </div>
       </div>
     </div>
