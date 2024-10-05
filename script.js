@@ -1,6 +1,8 @@
 const cartQuantity = document.getElementById("quantity");
 const empty_cart = document.getElementById("empty_cart");
 const cart_items = document.getElementById("cart_items");
+const order = document.getElementById("order");
+const total_price = document.getElementById("total_price");
 const quantity_arrary = {
   Waffle: [{ quantity: 0 }],
   Brulee: [{ quantity: 0 }],
@@ -63,32 +65,12 @@ function decrease_quantity(id) {
   // console.log(quantity_arrary);
 }
 function AddItemToCart(id, name, quantity, price) {
-  if (quantity == 0) {
+  if (quantity < 0) {
     return;
   }
   empty_cart.style.display = "none";
   cart_items.style.display = "flex";
-
-  // const newitem = document.createElement("div");
-  // newitem.innerHTML = `<div class="cart_item">
-  //           <div class="item_info">
-  //             <div class="item_name">${name}</div>
-  //             <div class="item_quantity_price">
-  //               <p class="item_quantity">${quantity}x</p>
-  //               <p class="item_price">@$ <span id="item_price${id}"> ${price}</span> </p>
-  //               <p class="single_total">$ <span id="item_total">${
-  //                 quantity * parseFloat(price)
-  //               }</span></p>
-  //             </div>
-  //           </div>
-  //           <img
-  //             src="./assets/images/icon-remove-item.svg"
-  //             alt="delete"
-  //             class="item_delete"
-  //           />
-  //         </div>`;
-
-  // cart_items.appendChild(newitem);
+  order.style.display = "flex";
 }
 
 function addCart(id, name, quantity, price) {
@@ -113,6 +95,7 @@ function addCart(id, name, quantity, price) {
               src="./assets/images/icon-remove-item.svg"
               alt="delete"
               class="item_delete"
+              id="item_delete${id}"
             />
           </div>`;
     cart_items.appendChild(newitem);
@@ -123,5 +106,9 @@ function addCart(id, name, quantity, price) {
     item_quantity.innerHTML = quantity;
     item_price.innerHTML = price;
     item_total.innerHTML = quantity * parseFloat(price);
+    let total = parseFloat(total_price.innerText);
+    console.log(total);
+    total = total + parseFloat(price);
+    total_price.innerHTML = total;
   }
 }
