@@ -59,8 +59,12 @@ async function getData(url) {
     const decrementBtn = document.getElementById(`decrement_${category}`);
     decrementBtn.addEventListener("click", () => {
       const currentCount = Number(itemCount.innerHTML);
-      if (currentCount > 0) {
+      if (currentCount > 1) {
         itemCount.innerHTML = currentCount - 1;
+      } else {
+        // buttonCard.style.display = "flex";
+        buttonCard.style.display = "flex";
+        countCard.style.display = "none";
       }
     });
   });
