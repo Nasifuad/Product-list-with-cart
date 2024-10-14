@@ -62,6 +62,10 @@ async function getData(url) {
       if (currentCount > 1) {
         itemCount.innerHTML = currentCount - 1;
       } else {
+<<<<<<< HEAD
+=======
+        // buttonCard.style.display = "flex";
+>>>>>>> 0e0935016164620553113b82ce5fd679b967a0eb
         buttonCard.style.display = "flex";
         countCard.style.display = "none";
       }
