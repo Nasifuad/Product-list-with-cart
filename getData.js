@@ -1,6 +1,6 @@
 const url = "./data.json";
 const desert_card = document.getElementById("desert-card");
-const quantity = document.getElementById("q");
+const quantity = document.getElementById("quantity");
 async function fetchData(url) {
   const response = await fetch(url);
   const data = await response.json();
