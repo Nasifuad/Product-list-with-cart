@@ -35,7 +35,7 @@ h1 {
 }
 
 .container {
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: center;
   /* border: 1px solid black; */
@@ -63,7 +63,6 @@ h1 {
   /* width:; */
 
   gap: 0.5rem;
-
   flex-wrap: wrap;
 }
 
