@@ -1,6 +1,6 @@
 const url = "./data.json";
 const desert_card = document.getElementById("desert-card");
-
+const quantity = document.getElementById("q");
 async function fetchData(url) {
   const response = await fetch(url);
   const data = await response.json();
@@ -50,10 +50,12 @@ async function getData(url) {
       // cartIcon.style.display = "none";
       countCard.style.display = "flex";
       itemCount.innerHTML = 1;
+      quantity.innerHTML = Number(quantity.innerHTML) + 1;
     });
 
     incrementBtn.addEventListener("click", () => {
       itemCount.innerHTML = Number(itemCount.innerHTML) + 1;
+      // quantity.innerHTML = Number(quantity.innerHTML) + 1;
     });
 
     const decrementBtn = document.getElementById(`decrement_${category}`);
@@ -64,6 +66,7 @@ async function getData(url) {
       } else {
         buttonCard.style.display = "flex";
         countCard.style.display = "none";
+        quantity.innerHTML = Number(quantity.innerHTML) - 1;
       }
     });
   });
