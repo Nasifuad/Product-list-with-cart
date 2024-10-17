@@ -350,3 +350,27 @@ h1 {
   cursor: pointer;
   opacity: 1;
 }
+.added_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.namePrice {
+  display: flex;
+  flex-direction: column;
+  color: var(--Rose900);
+  font-weight: 900;
+  font-size: 14px;
+}
+.quantity_price {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--Rose400);
+  font-weight: 600;
+}

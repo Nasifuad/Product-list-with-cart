@@ -32,19 +32,37 @@
           />
           <p>Your added items will appear here</p>
         </div>
-        <div class="cart_items" id="cart_items" style="display: none"></div>
-        <div class="order" style="display: none" id="order">
-          <div class="order-total">
-            <p>Order Total</p>
-            <div class="total">$ <span id="total_price">0</span></div>
+
+        <div class="cart_items" id="cart_items" style="display: none">
+          <div class="cart" id="added_item">
+            <div class="added_item">
+              <!-- <div class="namePrice">
+                <p>Classic Tiramisu</p>
+                <div class="quantity_price">
+                  <p id="count">1X</p>
+                  <p>@ <span id="cost">5.50</span></p>
+                  <p>$ <span id="cost">5.50</span></p>
+                </div>
+              </div>
+              <img
+                src="./assets/images/icon-remove-item.svg"
+                alt=""
+                id="remove"
+              /> -->
+            </div>
           </div>
-          <div class="carbon">
-            <img src="./assets/images/icon-carbon-neutral.svg" alt="carbon" />
-            <p>This is a <span class="bold">carbon-neutral</span> delivary</p>
+          <div class="order" id="order">
+            <div class="order-total">
+              <p>Order Total</p>
+              <div class="total">$ <span id="total_price">0</span></div>
+            </div>
+            <div class="carbon">
+              <img src="./assets/images/icon-carbon-neutral.svg" alt="carbon" />
+              <p>This is a <span class="bold">carbon-neutral</span> delivary</p>
+            </div>
+            <button id="confirm">Confirm Order</button>
           </div>
-          <button id="confirm">Confirm Order</button>
         </div>
-        <div id="cart-items"></div>
       </div>
     </div>
 
