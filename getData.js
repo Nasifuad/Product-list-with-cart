@@ -77,14 +77,32 @@ async function getData(url) {
       total.innerHTML = Number(total.innerHTML) + price;
       const remove = document.getElementById(`remove${category}`);
       remove.addEventListener("click", () => {
+        // Subtract the correct amount from the total price
+        const itemTotalCost = Number(
+          document.getElementById(`totalcost${category}`).innerText
+        );
+        total.innerHTML = Number(total.innerHTML) - itemTotalCost;
+
+        // Remove the item from the cart
         added_item.removeChild(add_item);
+
+        // Update the quantity
         if (quantity.innerHTML >= 1) {
           quantity.innerHTML = Number(quantity.innerHTML) - 1;
         }
+
+        // Reset item count and display the correct buttons
         itemCount.innerHTML = 0;
         countCard.style.display = "none";
         buttonCard.style.display = "flex";
-        total.innerHTML = Number(`totalcost${category}`.innerText);
+
+        // If no items left in the cart, reset the cart display
+        if (quantity.innerHTML == 0) {
+          empty_cart.style.display = "flex";
+          cart_item.style.display = "none";
+          total.innerHTML = "0"; // Reset total if no items are left
+          added_item.innerHTML = ""; // Clear all added items
+        }
       });
     });
 
