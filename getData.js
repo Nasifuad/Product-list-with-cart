@@ -58,6 +58,7 @@ async function getData(url) {
       quantity.innerHTML = Number(quantity.innerHTML) + 1;
       const add_item = document.createElement("div");
       add_item.setAttribute("class", "added_item");
+      add_item.setAttribute("id", `cart_item_${category}`);
       add_item.innerHTML = `
        <div class="namePrice">
        <p>${name}</p>
@@ -107,14 +108,15 @@ async function getData(url) {
     });
 
     incrementBtn.addEventListener("click", () => {
-      itemCount.innerHTML = Number(itemCount.innerHTML) + 1;
-      // quantity.innerHTML = Number(quantity.innerHTML) + 1;
       const count = document.getElementById(`count${category}`);
       const cost = document.getElementById(`cost${category}`);
       const totalcost = document.getElementById(`totalcost${category}`);
+
+      // Increment item count and total cost
       count.innerHTML = Number(count.innerHTML) + 1;
       totalcost.innerHTML = Number(count.innerHTML) * Number(cost.innerHTML);
       total.innerHTML = Number(total.innerHTML) + Number(cost.innerHTML);
+      itemCount.innerHTML = Number(itemCount.innerHTML) + 1;
     });
 
     const decrementBtn = document.getElementById(`decrement_${category}`);
@@ -123,26 +125,35 @@ async function getData(url) {
       const cost = document.getElementById(`cost${category}`);
       const totalcost = document.getElementById(`totalcost${category}`);
 
-      const currentCount = Number(itemCount.innerHTML);
-      if (currentCount > 1) {
+      // If item count is greater than 1, reduce count
+      if (Number(count.innerHTML) > 1) {
         count.innerHTML = Number(count.innerHTML) - 1;
         totalcost.innerHTML =
           Number(totalcost.innerHTML) - Number(cost.innerHTML);
         total.innerHTML = Number(total.innerHTML) - Number(cost.innerHTML);
-        itemCount.innerHTML = currentCount - 1;
+        itemCount.innerHTML = Number(itemCount.innerHTML) - 1;
       } else {
-        quantity.innerHTML = Number(quantity.innerHTML) - 1;
+        // When count reaches 0, remove the item
+        quantity.innerHTML = Number(quantity.innerHTML) - 1; // Decrement cart item quantity
+
+        // Hide item count and show 'Add to Cart' button again
         buttonCard.style.display = "flex";
         countCard.style.display = "none";
+
+        total.innerHTML = Number(total.innerHTML) - Number(cost.innerHTML); // Adjust total cost
+        const itemToRemove = document.getElementById(`cart_item_${category}`);
+        if (itemToRemove) {
+          added_item.removeChild(itemToRemove); // Remove the item from the cart
+        }
+        // If no items are left, reset cart
         if (quantity.innerHTML == 0) {
           empty_cart.style.display = "flex";
           cart_item.style.display = "none";
-          total.innerHTML = "0";
-          added_item.innerHTML = "";
+          total.innerHTML = "0"; // Reset total
+          added_item.innerHTML = ""; // Clear cart
         }
       }
     });
   });
 }
-
 getData(url);
