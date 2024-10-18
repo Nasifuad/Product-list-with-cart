@@ -374,3 +374,7 @@ h1 {
   color: var(--Rose400);
   font-weight: 600;
 }
+.count {
+  color: var(--Red);
+  font-weight: 700;
+}

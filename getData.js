@@ -62,7 +62,7 @@ async function getData(url) {
        <div class="namePrice">
        <p>${name}</p>
             <div class="quantity_price">
-              <p><span id="count${category}">1</span>X</p>
+              <p class="count"><span id="count${category}">1</span>X</p>
               <p>@ <span id="cost${category}">${price}</span></p>
               <p>$ <span id="totalcost${category}">${price}</span></p>
             </div>
