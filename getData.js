@@ -158,12 +158,18 @@ async function getData(url) {
       }
     });
     confirm_btn.addEventListener("click", () => {
+      confirm_order_list.style.display = "flex";
       confirm_order.style.display = "flex";
       document.getElementById("con").style.display = "block";
-      const final = document.createElement("div");
-      final.innerHTML = `
-      
-      `;
+      const confirm_item = document.getElementById("confirm_item");
+      const added_item = document.getElementById("added_item");
+      console.log(total.innerHTML);
+      const n = added_item.innerHTML;
+      confirm_item.innerHTML = n;
+      document.getElementById("final_price_confirm").innerHTML =
+        total.innerHTML;
+
+      // total.innerHTML = "0";
     });
     document.getElementById("new").addEventListener("click", () => {
       confirm_order.style.display = "none";
