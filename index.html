@@ -13,7 +13,7 @@
     <title>Product List with Cart</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container bg">
       <div class="desert-section">
         <h1 class="desert-title">Desserts</h1>
 
@@ -60,11 +60,43 @@
               <img src="./assets/images/icon-carbon-neutral.svg" alt="carbon" />
               <p>This is a <span class="bold">carbon-neutral</span> delivary</p>
             </div>
-            <button id="confirm">Confirm Order</button>
+            <a href="#confirm_order" id="confirm">Confrim Order</a>
           </div>
         </div>
       </div>
     </div>
+    <div id="confirm_order_list">
+      <div class="confirm_order" id="confirm_order">
+        <img src="./assets/images/icon-order-confirmed.svg"" />
+        <h1 class="confirmed">Order Confirmed</h1>
+        <p class="enjoy">We hope you enjoy your food!</p>
+        <div id="confirm-item">
+          <div class="confirm-item">
+            <img
+              class="confirm_image"
+              src="./assets/images/image-brownie-desktop.jpg"
+              alt=""
+            />
+            <div class="item-info">
+              <p class="name">Classic Waffle</p>
+              <div class="count_price">
+                <p class="count" id="count_final">1X</p>
+                <p class="price">@ <span id="price">5.50</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="total-price">
+            <p>$ <span id="price" class="price">5.50</span></p>
+          </div>
+        </div>
+        <div class="ordertotal">
+          <p>Order Total</p>
+          <p class="Final">$ <span id="final_price_confirm">0</span></p>
+        </div>
+        <button id="new">Start New Order</button>
+      </div>
+    </div>
+    <div class="con" id="con"></div>
 
     <script src="getData.js"></script>
     <script src="script.js"></script>

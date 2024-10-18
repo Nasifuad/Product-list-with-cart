@@ -5,6 +5,9 @@ const cart_item = document.getElementById("cart_items");
 const empty_cart = document.getElementById("empty_cart");
 const added_item = document.getElementById("added_item");
 const total = document.getElementById("total_price");
+const confirm_order = document.getElementById("confirm_order");
+const confirm_order_list = document.getElementById("confirm_order_list");
+const confirm_btn = document.getElementById("confirm");
 async function fetchData(url) {
   const response = await fetch(url);
   const data = await response.json();
@@ -153,6 +156,21 @@ async function getData(url) {
           added_item.innerHTML = ""; // Clear cart
         }
       }
+    });
+    confirm_btn.addEventListener("click", () => {
+      confirm_order.style.display = "flex";
+      document.getElementById("con").style.display = "block";
+      const final = document.createElement("div");
+      final.innerHTML = `
+      
+      `;
+    });
+    document.getElementById("new").addEventListener("click", () => {
+      confirm_order.style.display = "none";
+      document.getElementById("con").style.display = "none";
+      empty_cart.style.display = "flex";
+      cart_item.style.display = "none";
+      window.location.reload();
     });
   });
 }
